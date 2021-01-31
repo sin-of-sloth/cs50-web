@@ -1,0 +1,35 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create Entry
+{% endblock %}
+
+{% block body %}
+
+    <h1>Edit Entry</h1>
+    <hr><br>
+
+    <div class="container">
+        <form action="{% url 'edit' title %}" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="title">Title</label>
+                {{ form.title }}
+            </div>
+            <div class="form-group">
+                <label for="content">Content<span class="text-danger">*</span></label>
+                {{ form.content }}
+                <small id="content-help" class="form-text text-muted">Enter content in <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">Markdown</a> format</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Entry</button>
+        </form>
+
+        {% if error %}
+        <br>
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+        {% endif %}
+    </div>
+
+{% endblock %}

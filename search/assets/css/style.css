@@ -1,0 +1,30 @@
+.sidebar {
+    background-color: #64ffda !important;
+}
+
+.rounded-input {
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    background-color: #ffffff;
+    border-left: transparent;
+}
+
+.input-group-text {
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    background-color: #ffffff;
+    border-right: transparent;
+    padding-right: 0;
+    padding-left: 15px;
+    color: #9ea4aa;
+}
+
+.rounded-input:focus {
+    border-color:#ced4da;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}

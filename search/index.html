@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <link rel="icon" href="assets/img/icon.png"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="image.html">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="advanced.html">Advanced</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <br><br><br><br>
+
+        <div class="container">
+            <form action="https://google.com/search">
+                <div class="row justify-content-center">
+                    <div class="col col-lg-3 col-sm-5">
+                        <img src="assets/img/logo.png">
+                    </div>
+                </div>
+                <br>
+                <div class="row form-group justify-content-center">
+                    <div class="col col-lg-6 col-sm-8">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-search"></i></div>
+                            </div>
+                            <input class="form-control form-control-lg rounded-input" type="text" name="q">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <input name="btnK" class="btn btn-light btn-md" type="submit" value="Google Search">
+                    &emsp;
+                    <input name="btnI" class="btn btn-light btn-md" type="submit" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

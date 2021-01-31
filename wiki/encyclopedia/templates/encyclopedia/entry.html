@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia - {{ title }}
+{% endblock %}
+
+{% block body %}
+
+    {% if found %}
+    <div class="d-flex flex-row-reverse">
+        <a class="btn btn-primary edit-btn" href="{% url 'edit' title %}">Edit this Entry</a>
+    </div>
+    {% endif %}
+
+    <span class="text-white">{{ content|safe }}</span>
+
+{% endblock %}

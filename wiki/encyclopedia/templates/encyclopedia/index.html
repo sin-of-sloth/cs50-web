@@ -1,0 +1,35 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+
+    <h1>
+    {% if searched %}
+        {% if entries %}
+        Search Results for '{{ query }}':
+        <hr>
+        {% else %}
+        No Results Found for '{{ query }}'
+        {% endif %}
+    {% else %}
+        All Pages
+        <hr>
+    {% endif %}
+    </h1>
+
+
+    <div style="padding-left: 20px;">
+        {% for entry in entries %}
+        <span style="font-size: larger;">
+            <i class="fa fa-book" style="color: #a14470;"></i>
+            &nbsp;
+            <a href="{% url 'entry' entry %}">{{ entry }}</a>
+        </span>
+        <br>
+        {% endfor %}
+    </div>
+
+{% endblock %}
